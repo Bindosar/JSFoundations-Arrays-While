@@ -10,8 +10,19 @@
  */
 function isArrayLengthOdd(a) {
   // Your code here
-}
+  
+ 
+ if (a.length % 2 !== 0){
+  console.log("Its Odd !")
+  return true
+ }
+ else{
+  console.log("Its Even !")
+  return false
+ }
 
+}
+isArrayLengthOdd(1,2,3);
 /**
  * isArrayLengthEven(a):
  * - receives array `a`
@@ -24,8 +35,16 @@ function isArrayLengthOdd(a) {
  */
 function isArrayLengthEven(a) {
   // Your code here
+  if (a.length % 2 == 0 ){
+   console.log("Its Even !")
+   return true
+  }
+  else{
+    console.log("Its Odd ! ");
+    return false
+  }
 }
-
+isArrayLengthEven(1,2,3,4)
 /**
  * addLailaToArray(a):
  * - receives array `a`
@@ -36,7 +55,10 @@ function isArrayLengthEven(a) {
  */
 function addLailaToArray(a) {
   // Your code here
+  a.push("Laila")
+  return a
 }
+
 
 /**
  * eliminateTeam(a):
@@ -48,7 +70,10 @@ function addLailaToArray(a) {
  */
 function eliminateTeam(a) {
   // Your code here
+  const lastOne= a.pop()
+  return lastOne
 }
+
 
 /**
  * secondHalfOfArrayIfItIsEven(a):
@@ -62,6 +87,12 @@ function eliminateTeam(a) {
  */
 function secondHalfOfArrayIfItIsEven(a) {
   // Your code here
+  if (a.length % 2 == 0){
+   return a.slice(a.length*0.5)
+  }
+  else{
+    return a.slice(0,-1)
+  }
 }
 
 /**
@@ -80,6 +111,10 @@ function secondHalfOfArrayIfItIsEven(a) {
  */
 function youGottaCalmDown(s) {
   // Your code here
+
+// 
+        // sorry I didn't understand the last task xD
+// 
 }
 
 module.exports = {
